@@ -1,0 +1,36 @@
+@import '@nebular/theme/styles/theming';
+@import '@nebular/theme/styles/themes/cosmic';
+
+$nb-themes: nb-register-theme((
+  // Cosmic theme uses different primary color variable structure
+  // Use these variables instead:
+  color-primary-100: #faf7ff,  // Lightest primary
+  color-primary-200: #ece3ff,
+  color-primary-300: #d5bfff,
+  color-primary-400: #b18aff,
+  color-primary-500: #a16eff,  // Main primary color
+  color-primary-600: #7b51db,
+  color-primary-700: #5a37b8,
+  color-primary-800: #3e2494,
+  color-primary-900: #29157a,  // Darkest primary
+  
+  // Basic text and background
+  background-basic-color-1: #323259,
+  background-basic-color-2: #252547,
+  background-basic-color-3: #1b1b38,
+  background-basic-color-4: #13132b,
+  
+  // Card backgrounds
+  card-background-color: #323259,
+  
+  // Other common customizations
+  border-radius: 0.5rem,
+  shadow: 0 0.5rem 1rem 0 rgba(25, 25, 73, 0.4),
+
+), cosmic, cosmic);
+
+// @import '@nebular/theme/styles/globals';
+
+// @include nb-install() {
+//   @include nb-theme-global();
+// }
